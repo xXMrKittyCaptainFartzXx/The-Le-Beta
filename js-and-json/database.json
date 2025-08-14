@@ -1,0 +1,23 @@
+[
+{
+    "id": "digital-fingers",
+    "title": "Digital Fingers, Bacterial Skin",
+    "type": "poem",
+    "date": "2025-08-05",
+    "tags": ["nature", "technology", "biology", "dominance"],
+    "summary": "A poem exploring control over nature and digital life.",
+    "filepath": "/MY-CREATIONS/digital-fingers.html",
+    "thumbnail": "/assets/thumbnails/test-thumb.png"
+},
+{
+    "id": "1-800-bottom",
+    "title": "1-800-BOTTOM",
+    "type": "audio",
+    "date": "2025-07-28",
+    "tags": ["horny", "queer", "satire"],
+    "summary": "An experimental audio piece riffing on late-night call-in culture.",
+    "filepath": "/MY-CREATIONS/1-800-bottom.html",
+    "thumbnail": "/assets/thumbsnails/1-800-bottom.jpg",
+    "youtube": "https://www.youtube.com/embed/0nwiPZwAMBs"
+}
+]

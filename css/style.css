@@ -1,0 +1,32 @@
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border: 0;
+}
+
+#todo section {
+    margin-bottom: 2em;
+    padding-left: 1em;
+    border-left: 3p solid #f90
+}
+
+#todo h3 {
+  color: #ff6600;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+#todo ul {
+  list-style: disc inside;
+  line-height: 1.4;
+}
