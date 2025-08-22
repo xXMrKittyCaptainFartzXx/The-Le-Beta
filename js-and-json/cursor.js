@@ -1,5 +1,5 @@
 const cursor = document.createElement('img'); // creates new img element in memory
-cursor.src = './assets/cursors/PixelFoxCursor3.png'; // your custom cursor image
+cursor.src = '../assets/cursors/PixelFoxCursor3.png'; // your custom cursor image
 cursor.style.position = 'fixed';
 cursor.style.width = '48px';
 cursor.style.height = '51px';
