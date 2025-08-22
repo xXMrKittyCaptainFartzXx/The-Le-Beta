@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UPDATE LAWG & TWO DOOZUH | Mr.TLQWH.something</title>
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
 
@@ -27,26 +28,25 @@
     <section>
         <details>
         <summary>🚀 NEXT STEPS (Immediate/Next Up)</summary>
-            <ul>
-            <li>Go through "Notion" doc &amp; load more ideas here</li>
-            <li>Make this page more user-friendly with categories/sub-categories (UI/UX improvements)</li>
-            <li>Setup a new GitHub repo for this project</li>
-            </ul>
+        <ul>
+            <li>Make cursor "fun" (animations or effects)</li>
+                <ul>
+                    <li>Maybe just take one of your pixel thingies and convert it into one for the moment; doesn't need to be fancy, just functionable for the moment (just a placeholder until you work on UI elements more in the future)</li>
+                </ul>
+            <li>Finish password link onboarding page</li>
+            <li>AI defense things (Look under "UX" for more)</li>
+            <li>Add a draggable character on homepage (start simple)</li>
+        </ul>
         </details>
     </section>
-
 
     <section>
         <details>
         <summary>⚡ SHORT-TERM (Stuff to Do Soon)</summary>
         <ul>
             <li>Rebalance your life (lol)</li>
-            <li>Finish password link onboarding page</li>
             <li>Add WEDNESDAYs breaky breaks &amp; other fun fursona website interactions</li>
-            <li>Make cursor "fun" (animations or effects)</li>
             <li>Flesh out the DIY CMS more</li>
-            <li>Add hovertext tooltips</li>
-            <li>Add a draggable character on homepage (start simple)</li>
         </ul>
         </details>
     </section>
@@ -58,10 +58,13 @@
             <li>Make site usable &amp; fun so people prefer it over syndicated content</li>
             <li>Buy a domain once plan is solid</li>
             <li>Multiple hosting trick (Neocities + Nekoweb with same homepage)</li>
+            <li>Research auto-update workflows for Neocities & Nekoweb (GitHub → hosting automation)</li>
             <li>Flesh out aesthetics (animations, backgrounds, characters)</li>
             <li>Syndication &amp; auto-sharing on major platforms</li>
             <li>Implement RSS feed or similar</li>
-            <li>Visitor analytics/logging</li>
+            <li>Visitor analytics/logging (Privacy based; not google analytics. Possibly something like PLausible or simple server logs)</li>
+            <li>Contact forms: If you add one, avoid directly exposing emails; use form handlers or obfuscation.</li>
+            <li>Content Disclaimers/Copyright: helps establish owernship legally</li>
             <li>More Captain Googly-Purr interactions</li>
             <li>Single-page character/elements per page</li>
             <li>Donation/tip jar for early supporters</li>
@@ -81,6 +84,16 @@
             <li>Website badge/square to share on other sites (image + text)</li>
             <li>“Recent entries” on home page (JS)</li>
             <li>Defense against AI scraping (robots.txt, licensing, cloaking)</li>
+            <li>AI Scraping / Content Protection Options:
+                <ul>
+                    <li>Use robots.txt to politely restrict crawlers (ethical bots only)</li>
+                    <li>Consider rate-limiting or request throttling for suspicious traffic</li>
+                    <li>Obfuscate text/images in subtle ways to slow down casual scrapers</li>
+                    <li>Embed hidden identifiers or watermarks to track unauthorized copying</li>
+                    <li>Include clear Terms of Use / Copyright notice</li>
+                    <li>Monitor unusual activity and adjust defenses over time</li>
+                </ul>
+            </li>
             <li>Connecting with others: Webmention, Micropub, ActivityPub, webrings, RSS</li>
             <li>Federation &amp; peer-to-peer tools (Mastodon, Pixelfed, IndieWeb)</li>
             <li>Syndication tools (Bridgy, IFTTT, Micro.blog)</li>
@@ -145,9 +158,17 @@
     <hr />
   <section id="updatelog">
     <h1>UPDATE LOG</h1>
+      <time datetime="2025-08-22">8/22/25</time>
+        <ul>
+            <li>Modified fox pixel art to become a cursor for my website that I made before (even added a little arrow in the upper left)</li>
+            <li>Started going through code to implement my fox cursor</li>
+        </ul>
       <time datetime="2025-08-21">8/21/25</time>
         <ul>
             <li>Checking if commit push works via VS Code pushing (source control shiz)</li>
+            <li>Seems my GitHub is pretty much set up for me to push commits to now, so I can move on. Hooray!!</li>
+            <li>Reorganizing what things to hit next</li>
+            <li>Started messing around with cursor stuffs</li>
         </ul>
       <time datetime="2025-08-14">8/14/25</time>
         <ul>
@@ -190,6 +211,7 @@
     BRRRRRRRRRRRRRR BRRRRRRRRRRRR BRRRRRRRRRRR DETECTING MASSIVE OVAHLOAD OF SMELLY WEIRDO READING DIS TEXT BRRRRRRRRRRRR BRRRRRRRRRRRR
 </marquee>
 
+<script src="/js-and-json/cursor.js"></script>
 </body>
 </html>
 

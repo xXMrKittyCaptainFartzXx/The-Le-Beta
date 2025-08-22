@@ -14,19 +14,8 @@
     border: 0;
 }
 
-#todo section {
-    margin-bottom: 2em;
-    padding-left: 1em;
-    border-left: 3p solid #f90
-}
-
-#todo h3 {
-  color: #ff6600;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-#todo ul {
-  list-style: disc inside;
-  line-height: 1.4;
+html, body{
+  height: 100%; /* fills the whole viewport */
+  margin: 0; /* remove default marging */
+  cursor: none; /* hide default cursor */
 }
