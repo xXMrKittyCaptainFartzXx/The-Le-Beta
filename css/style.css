@@ -19,3 +19,12 @@ html, body{
   margin: 0; /* remove default marging */
   cursor: none; /* hide default cursor */
 }
+
+.draggable-character {
+  position: absolute; /* allows us to move it with left/top */
+  left: 180px; /* starting position */
+  top: 60px; 
+  width: 48px; /* or whatever size */
+  cursor: grab; /*optional: makes cursor look draggable */
+  user-select: none; /* prevents text-selection cursor weirdness */
+}
