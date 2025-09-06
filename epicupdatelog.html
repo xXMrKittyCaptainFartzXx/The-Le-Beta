@@ -25,7 +25,7 @@
   <section id="Reminders">
     <h1>REMINDERS</h1>
     <ul>
-        <li>KEEP IN MIND FOR COMMITS!! Ctrl+Shift+R (sometimes the browser caches the wrong data)</li>
+        <li>KEEP IN MIND FOR COMMITS!! Ctrl+Shift+R (sometimes the browser caches the wrong data; ctrl + r is normal reload, whereas adding SHIFT forces the browser to bypass cache)</li>
         <li>Check for errors in DevTools (inspect) Console</li>
     </ul>
   </section>
@@ -40,9 +40,10 @@
         <details>
         <summary>🚀 NEXT STEPS (Immediate/Next Up)</summary>
         <ul>
-            <li>Make the password gate link page a little more fun (and change the "environment variables" to a password that's more fun, LOL</li>
-            <li>AI defense things (Look under "UX" for more)</li>
-            <li>Add a draggable character on homepage (start simple)</li>
+            <li>Donation/tip jar for early supporters</li>
+            <li>Wednesday breaky breaks</li>
+            <li>Flesh out DIY CMS more (do you want the junk drawer/experiments to be part of this or its own separate page?)</li>
+            <li>Planning on signatures/metadata stuff for my content (audio-wise you could do ultrasonic sound signature or something inaudible; although mp3s might kill it with compression)</li>
         </ul>
         </details>
     </section>
@@ -51,9 +52,12 @@
         <details>
         <summary>⚡ SHORT-TERM (Stuff to Do Soon)</summary>
         <ul>
-            <li>Rebalance your life (lol)</li>
-            <li>Add WEDNESDAYs breaky breaks &amp; other fun fursona website interactions</li>
-            <li>Flesh out the DIY CMS more</li>
+            <li>Syndication &amp; auto-sharing on major platforms (You don't need to DO this yet, but just start understanding how you *would* do it)</li>
+            <li>Contact forms: If you add one, avoid directly exposing emails; use form handlers or obfuscation.</li>
+            <li>Contact/Leave a note/chat feature</li>
+            <li>Visitor analytics/logging (Privacy based; not google analytics. Possibly something like PLausible or simple server logs)</li>
+            <li>THE AD DUNGEON (and how to actually sync it to getting me actually paid from the chaos LOL); "There's no ads anywhere else on this site. This is where they all are. Are you ready for torture? Turn off your ad blocker and get ready for sheckles.</li>
+            <li>Start fleshing out the *LOOK* and theming of your site</li>
         </ul>
         </details>
     </section>
@@ -71,7 +75,6 @@
             <li>Implement RSS feed or similar</li>
             <li>Visitor analytics/logging (Privacy based; not google analytics. Possibly something like PLausible or simple server logs)</li>
             <li>Contact forms: If you add one, avoid directly exposing emails; use form handlers or obfuscation.</li>
-            <li>Content Disclaimers/Copyright: helps establish owernship legally</li>
             <li>More Captain Googly-Purr interactions</li>
             <li>Single-page character/elements per page</li>
             <li>Donation/tip jar for early supporters</li>
@@ -86,27 +89,16 @@
             <li>Download links / commissions / merch</li>
             <li>Accessibility stuff (easy, keep your style but usable)</li>
             <li>Music player</li>
-            <li>Licenses (maybe)</li>
             <li>Year display in footer (maybe funn-e style)</li>
             <li>Website badge/square to share on other sites (image + text)</li>
             <li>“Recent entries” on home page (JS)</li>
-            <li>Defense against AI scraping (robots.txt, licensing, cloaking)</li>
-            <li>AI Scraping / Content Protection Options:
-                <ul>
-                    <li>Use robots.txt to politely restrict crawlers (ethical bots only)</li>
-                    <li>Consider rate-limiting or request throttling for suspicious traffic</li>
-                    <li>Obfuscate text/images in subtle ways to slow down casual scrapers</li>
-                    <li>Embed hidden identifiers or watermarks to track unauthorized copying</li>
-                    <li>Include clear Terms of Use / Copyright notice</li>
-                    <li>Monitor unusual activity and adjust defenses over time</li>
-                </ul>
-            </li>
             <li>Connecting with others: Webmention, Micropub, ActivityPub, webrings, RSS</li>
             <li>Federation &amp; peer-to-peer tools (Mastodon, Pixelfed, IndieWeb)</li>
             <li>Syndication tools (Bridgy, IFTTT, Micro.blog)</li>
             <li>Backup &amp; mirror your site (always be prepared)</li>
             <li>Contact/Leave a note/chat feature</li>
             <li>Junk drawer/experiments section</li>
+            <li>Make the password gate link page a little more fun (and change the "environment variables" to a password that's more fun, LOL)</li>
         </ul>
         </details>
     </section>
@@ -163,15 +155,37 @@
     </section>
   </section>
 
+    <section>
+        <details>
+        <summary>📱 Mobile Edits</summary>
+        <ul>
+            <li>Cursor (make either accessible or invisible; idk how that works on mobile)</li>
+            <li>Draggable character; do something about it</li>
+        </ul>
+        </details>
+    </section>
+
     <hr />
   <section id="updatelog">
     <h1>UPDATE LOG</h1>
+      <time datetime="2025-09-05">9/05/25</time>
+        <ul>
+            <li>Using ChatGPT to help me think through MONEY MAKING. DIRTY SHECKLES. GETTING MY HANDS ON THE DOUGH. And just-the-tip jars.</li>
+            <li>Decided which starter payment processors to use for giving me the big, dripping, veiny tip. Also created the bareboner HTML page to host the links at. (Where da zeldas?...also if you don't get this joke I don't even know what to tell you. I wonder what's for dinnur mah boi mah boi how can we help)</li>
+        </ul>
+      <time datetime="2025-09-04">9/04/25</time>
+        <ul>
+            <li>Created "purrmissions.html" basic page</li>
+            <li>Went through other content protection stuff. Seems the basics are where it's at and the rest is overkill OR it doesn't really stop malefactors.</li>
+            <li>Planning out what to hit up next.</li>
+        </ul>
       <time datetime="2025-09-02">9/02/25</time>
         <ul>
             <li>Updated the cursor a little bit for the time being (the tail was annoying me lol)</li>
             <li>Started working on the code for a character to click and drag around the screen.</li>
             <li>Went through the HTML and desktop setup for the character drag beta. (May want to do mobile version too and *then* look at the CSS).</li>
-            <li>Got the character drag functional on desktop live server.</li>
+            <li>Got the character drag functional on desktop live server. Got it working on the hosted site too.</li>
+            <li>Started working on content protection stuffs. </li>
         </ul>
       <time datetime="2025-08-29">8/29/25</time>
         <ul>
