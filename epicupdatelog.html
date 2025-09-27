@@ -73,12 +73,18 @@
             <li>Research auto-update workflows for Neocities & Nekoweb (GitHub → hosting automation)</li>
             <li>Flesh out aesthetics (animations, backgrounds, characters)</li>
             <li>Syndication &amp; auto-sharing on major platforms</li>
-            <li>Implement RSS feed or similar</li>
+            <li>Implement RSS feed or similar. Maybe a newsletter?</li>
             <li>Visitor analytics/logging (Privacy based; not google analytics. Possibly something like PLausible or simple server logs)</li>
+              <details>
+                <ul>
+                <li>I would need to think of a real purpose for these. If I get significant traffic, A/B testing to see what drives things, optimizing funnels, hosting own monetized content (directly on my site), growth and trend tracking. Analytics only start being important when: 1. Your site traffic is meaningful, 2. You have multiple things competing for attention or conversion, 3. You’re actively experimenting to increase engagement/revenue. Before that, it’s mostly busywork or potential ego traps, especially for a personal hub where the money metrics live elsewhere. So for now, you can safely ignore it and focus on content and engagement features—then add minimal analytics later if/when your site starts hitting the thresholds above. </li>
+                </ul>
+              </details>
             <li>Contact forms: If you add one, avoid directly exposing emails; use form handlers or obfuscation.</li>
             <li>More Captain Googly-Purr interactions</li>
             <li>Single-page character/elements per page</li>
             <li>Donation/tip jar for early supporters</li>
+            <li>Possible: 2nd version of guestbook allowing extended features like doodles and the like. (I'd have to do my own backend though I think? Like through a server? It'd definitely be more setup from what I can tell; there's not really a free service that apparently does this out of the box and allows enough entries -- pika does it but it allows 50 entries on free tier. So ew.) Also, could make "reply" threads a thing too (like HTMLCommentBox does, but ya know, no banner ads).</li>
         </ul>
         </details>
     </section>
@@ -151,6 +157,7 @@
             <li>Tag combiner UI (filtering by multiple tags)</li>
             <li>“Recently added” list</li>
             <li>Context-aware navigation (“If you liked this, check out...”) </li>
+            <li>Have *some* sort of way for visitors to interact with the content; namely leaving a comment or reacting somehow.</li>
         </ul>
         </details>
     </section>
@@ -169,11 +176,22 @@
     <hr />
   <section id="updatelog">
     <h1>UPDATE LOG</h1>
+      <time datetime="2025-09-26">9/26/25</time>
+        <ul>
+            <li>Deciding on user engagement stuff more. Decided livechats are too much moderation for me. I'd love a guestbook though.</li>
+            <li>Was looking into options for more engagement within the guestbook. Seems that enabling attachments poses security risks. Doodles seem fun but it's a bit of a headache to setup with the tools available; may be a future project if it's a future desired feature from users & myself.</li>
+            <li>I'm *already* using github but I found out that Neocities free-tier has CSP (content security policy) shit that makes some coding stuff more of a headache. I'll still probably hook up a splash to Neocities to redirect, but hosting-wise I think I'll stick with Git (those delicious version controls and Git pushes w/VS Code? Fuckin *MWAH* I'm gonna get hard).</li>
+            <li>Lookin through my options for Guestbooks. I like how HTMLCommentBox (HCB) has replies ready but from what I read, it has banner ads on free-tiers? If so, big oof. Maybe not. I think I'll go with Atabook instead; it's free, no banner ads, you can embed, etc. Only problem is it doesn't really do smooth reply thread stuff but ehhhhhhhhh it's a guestbook who gives a shit.</li>
+            <li>Made atabook account, modified settings, embeded it VERY POORLY into the homepage for the moment. Wrote text to inform ppl (and myself) about this shiz. Meep moop.</li>
+        </ul>
       <time datetime="2025-09-23">9/23/25</time>
         <ul>
             <li>Updated navigation links on each page to have the "title" attribute included.</li>
             <li>Made the internet archive actually WORK (turns out I had two "@'s" in the address...oooops, LOL)</li>
             <li>Updated some stuff on the ABOOTPAEG (for Mr. TLQWH; changing vague species classification stuff, adjusting name stuff)</li>
+            <li>More planning for going forward.</li>
+            <li>Decided, for the moment, there's no real point in having any sort of analytics on my website, even minimal. Probably more of a mental distraction/ego trap at this point. Put these specifications under "to do" in "long-term" for the moment.</li>
+            <li>Discussing w/ChatGPT what sort of user engagement things to have on my website.</li>
         </ul>
       <time datetime="2025-09-20">9/20/25</time>
         <ul>
