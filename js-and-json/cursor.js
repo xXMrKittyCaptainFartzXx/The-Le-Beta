@@ -1,14 +1,4 @@
 const cursor = document.createElement('img'); // creates new img element in memory
-
-const scriptEl =
-  document.currentScript ||
-  document.querySelector('script[src$="cursor.js"]');
-
-const scriptUrl = new URL(scriptEl.src);
-const projectRoot = new URL('../', scriptUrl);
-
-cursor.src = new URL('assets/cursors/PixelFoxCursor5.png', projectRoot).href;
-
 cursor.src = './assets/cursors/PixelFoxCursor5.png'; // your custom cursor image
 cursor.style.position = 'fixed';
 cursor.style.width = '48px';
