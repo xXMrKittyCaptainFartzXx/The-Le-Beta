@@ -1,12 +1,21 @@
-//Create the image dynamically
-const draggableCharacter = document.createElement('img'); 
+// Create the image dynamically
+const draggableCharacter = document.createElement('img');
 
-// figure out how many folders deep this page is, then climb back to project root
-const pathParts = location.pathname.split('/').filter(Boolean); 
-const depth = Math.max(0, pathParts.length - 1); // -1 because last part is the filename
-const basePath = '../'.repeat(depth);
+// Find the URL of THIS script (characterdrag.js)
+const scriptEl =
+  document.currentScript ||
+  document.querySelector('script[src$="characterdrag.js"]');
 
-draggableCharacter.src = basePath + 'assets/characterdrag/PixelFoxDrag1.png';
+const scriptUrl = new URL(scriptEl.src);
+
+// project root is one level up from /js-and-json/
+const projectRoot = new URL('../', scriptUrl);
+
+// build the image URL from the project root
+draggableCharacter.src = new URL(
+  'assets/characterdrag/PixelFoxDrag1.png',
+  projectRoot
+).href;
 
 draggableCharacter.classList.add('draggable-character');
 document.body.appendChild(draggableCharacter);
