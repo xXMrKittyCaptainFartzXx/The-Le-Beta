@@ -1,6 +1,6 @@
 //Create the image dynamically
 const draggableCharacter = document.createElement('img'); // creating brand-new HTML <img> element dynamically in Javascript
-draggableCharacter.src = './assets/characterdrag/PixelFoxDrag1.png'
+draggableCharacter.src = '/assets/characterdrag/PixelFoxDrag1.png'
 draggableCharacter.classList.add('draggable-character'); // creating an identifier for JS and CSS to both utilize "add a class to this element so I can style it or select it later"
 document.body.appendChild(draggableCharacter);
 
