@@ -1,0 +1,20 @@
+{
+  "name": "mr-tlqwh_website_stuffz",
+  "version": "1.0.0",
+  "description": "I'M MAKING A WEBSITE, DIPSHIT.\r Although I'll probably host the FULL thing elsewhere (like Neocities/Nekoweb/etc). This is more of my testing groundz, rawr.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xXMrKittyCaptainFartzXx/The-Le-Beta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xXMrKittyCaptainFartzXx/The-Le-Beta/issues"
+  },
+  "homepage": "https://github.com/xXMrKittyCaptainFartzXx/The-Le-Beta#readme"
+}
