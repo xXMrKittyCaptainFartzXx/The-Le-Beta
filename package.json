@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/xXMrKittyCaptainFartzXx/The-Le-Beta/issues"
   },
-  "homepage": "https://github.com/xXMrKittyCaptainFartzXx/The-Le-Beta#readme"
+  "homepage": "https://github.com/xXMrKittyCaptainFartzXx/The-Le-Beta#readme",
+  "type": "module"
 }
