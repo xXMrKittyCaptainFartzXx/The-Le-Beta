@@ -1,8 +1,8 @@
-//fs means "file system"
-import fs from 'fs';
+import thisherebud from 'fs';
 
-// Read your package.json file as raw text
-const fileContents = fs.readFileSync('package.json', 'utf8');
+const htmlText = thisherebud.readFileSync('index.html', 'utf8');
 
-console.log("--- Hey bud it read the file! Take a gander: ---");
-console.log(fileContents)
+const totalCharacters = htmlText.length;
+
+console.log("--- brrrrr here we go ---")
+console.log("Index.html is currently " + totalCharacters + " characters long! guh")
