@@ -17,5 +17,8 @@
     "url": "https://github.com/xXMrKittyCaptainFartzXx/The-Le-Beta/issues"
   },
   "homepage": "https://github.com/xXMrKittyCaptainFartzXx/The-Le-Beta#readme",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
