@@ -1,13 +1,71 @@
-<body style="background-color: #000; color: #fff; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh;">
-    <div style="height: 80vh; aspect-ratio: 4 / 3;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVAL Playtest</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Desktop Layout (Your original sizing) */
+        .game-wrapper {
+            height: 80vh;
+            aspect-ratio: 4 / 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Mobile Layout Adjustments */
+        @media (max-width: 768px) {
+            .game-wrapper {
+                width: 95vw;
+                height: auto;
+                max-height: 75vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-wrapper">
         <iframe 
             src="/SERVAL_PixelArt_Game_Test-Build/index.html" 
-            style="width: 100%; height: 100%; border: none;"
-            allow="autoplay; gamepad">
+            allow="autoplay; gamepad; fullscreen">
         </iframe>
     </div>
 
     <footer>
         <p><a href="guysandgal-lerie-s.html">← back to WORKS</a></p>
     </footer>
+
 </body>
+</html>
