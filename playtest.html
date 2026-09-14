@@ -8,22 +8,30 @@
         * {
             box-sizing: border-box;
         }
-        body {
-            background-color: #000;
-            color: #fff;
+        html, body {
+            width: 100%;
+            height: 100%;
             margin: 0;
             padding: 0;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
         }
 
-        /* Desktop Layout (Your original sizing) */
         .game-wrapper {
-            height: 80vh;
+            /* Single fluid calculation for width */
+            width: min(95vw, calc((100vh - 50px) * (4 / 3)));
+            
+            /* Native 4:3 height resolution */
             aspect-ratio: 4 / 3;
+            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,24 +41,21 @@
             width: 100%;
             height: 100%;
             border: none;
+            display: block;
         }
 
         footer {
-            padding: 10px;
-            text-align: center;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
         }
+
         footer a {
             color: #fff;
             text-decoration: none;
-        }
-
-        /* Mobile Layout Adjustments */
-        @media (max-width: 768px) {
-            .game-wrapper {
-                width: 95vw;
-                height: auto;
-                max-height: 75vh;
-            }
+            font-size: 14px;
         }
     </style>
 </head>
