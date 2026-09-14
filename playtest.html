@@ -26,15 +26,25 @@
         }
 
         .game-wrapper {
-            /* Single fluid calculation for width */
             width: min(95vw, calc((100vh - 50px) * (4 / 3)));
-            
-            /* Native 4:3 height resolution */
             aspect-ratio: 4 / 3;
-            
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+        }
+
+        /* Fallback for iOS Safari (which lacks native div/iframe fullscreen) */
+        .game-wrapper.pseudo-fullscreen {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            max-width: none !important;
+            max-height: none !important;
+            z-index: 99999 !important;
+            background-color: #000 !important;
         }
 
         iframe {
@@ -49,28 +59,67 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 15px;
             margin-top: 5px;
         }
 
-        footer a {
+        footer a, footer button {
             color: #fff;
+            background: none;
+            border: none;
             text-decoration: none;
             font-size: 14px;
+            font-family: inherit;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        footer button:hover, footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <div class="game-wrapper">
+    <div class="game-wrapper" id="game-container">
         <iframe 
+            id="game-iframe"
             src="/SERVAL_PixelArt_Game_Test-Build/index.html" 
             allow="autoplay; gamepad; fullscreen">
         </iframe>
     </div>
 
     <footer>
-        <p><a href="guysandgal-lerie-s.html">← back to WORKS</a></p>
+        <button id="fullscreen-btn" onclick="toggleFullscreen()">[ Fullscreen ]</button>
+        <span>|</span>
+        <a href="guysandgal-lerie-s.html">← back to WORKS</a>
     </footer>
+
+    <script>
+        function toggleFullscreen() {
+            const container = document.getElementById('game-container');
+
+            // Native Fullscreen API (Android, Desktop Firefox/Chrome)
+            if (container.requestFullscreen || container.webkitRequestFullscreen) {
+                if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+                    if (container.requestFullscreen) {
+                        container.requestFullscreen();
+                    } else if (container.webkitRequestFullscreen) {
+                        container.webkitRequestFullscreen();
+                    }
+                } else {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    } else if (document.webkitExitFullscreen) {
+                        document.webkitExitFullscreen();
+                    }
+                }
+            } else {
+                // iOS Safari Fallback
+                container.classList.toggle('pseudo-fullscreen');
+            }
+        }
+    </script>
 
 </body>
 </html>
