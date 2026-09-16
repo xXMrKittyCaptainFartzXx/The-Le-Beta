@@ -25,16 +25,18 @@
             justify-content: center;
         }
 
+        /* Responsive container allowing fluid horizontal width */
         .game-wrapper {
-            width: min(95vw, calc((100vh - 50px) * (4 / 3)));
-            aspect-ratio: 4 / 3;
+            width: 100vw;
+            height: calc(100vh - 40px);
+            max-width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
         }
 
-        /* Fallback for iOS Safari (which lacks native div/iframe fullscreen) */
+        /* iOS Safari Fullscreen Fallback */
         .game-wrapper.pseudo-fullscreen {
             position: fixed !important;
             top: 0 !important;
@@ -99,7 +101,6 @@
         function toggleFullscreen() {
             const container = document.getElementById('game-container');
 
-            // Native Fullscreen API (Android, Desktop Firefox/Chrome)
             if (container.requestFullscreen || container.webkitRequestFullscreen) {
                 if (!document.fullscreenElement && !document.webkitFullscreenElement) {
                     if (container.requestFullscreen) {
@@ -115,7 +116,6 @@
                     }
                 }
             } else {
-                // iOS Safari Fallback
                 container.classList.toggle('pseudo-fullscreen');
             }
         }
