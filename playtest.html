@@ -85,7 +85,7 @@
 
     <div class="game-wrapper" id="game-container">
         <!-- Floating Exit Button for Mobile/Fullscreen Overlay -->
-        <button id="overlay-exit-btn" onclick="toggleFullscreen()" style="display: none;">✕ Exit</button>
+        <button id="overlay-exit-btn" onclick="toggleFullscreen()" style="display: none;">✕</button>
         
         <iframe 
             id="game-iframe"
@@ -103,7 +103,7 @@
     <style>
         /* Base floating exit button (Hidden by default) */
         #overlay-exit-btn {
-            display: none; /* Controlled via JS */
+            display: none;
             position: absolute;
             top: 10px;
             right: 10px;
@@ -111,11 +111,15 @@
             background: rgba(0, 0, 0, 0.7);
             color: #fff;
             border: 1px solid #555;
-            padding: 6px 12px;
-            font-size: 14px;
+            width: 36px;
+            height: 36px;
+            font-size: 16px;
             font-family: inherit;
             border-radius: 4px;
             cursor: pointer;
+            text-align: center;
+            line-height: 34px;
+            padding: 0;
         }
 
         #overlay-exit-btn:active {
@@ -123,7 +127,7 @@
             color: #000;
         }
 
-        /* Force hide the button on desktop devices with hover pointers */
+        /* Force hide on desktop devices with hover pointers */
         @media (hover: hover) and (pointer: fine) {
             #overlay-exit-btn {
                 display: none !important;
